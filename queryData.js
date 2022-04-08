@@ -23,13 +23,31 @@ var params = {
 
 // var params = {
 //   TableName: "Movies",
-//   KeyConditionExpression: "#yr, title, info.rating",
-//   FilterExpression: "#yr between :start_yr and :end_yr",
+
+// KeyConditionExpression: "#yr between :start_yr and :end_yr",
+// ExpressionAttributeValues: {
+//   ":start_yr": { N: 2010 },
+//   ":end_yr": { N: 2013 },
+// },
+
+// ProjectionExpression: "#yr, title, info.genres, info.actors[0]",
+// KeyConditionExpression: "#yr = :yyyy and title between :letter1 and :letter2",
+// ExpressionAttributeNames: {
+//   "#yr": "year",
+// },
+// ExpressionAttributeValues: {
+//   ":yyyy": 2013,
+//   ":letter1": "A",
+//   ":letter2": "S",
+// },
+
+//   ProjectionExpression: "#yr, title, info.genres, info.actors[0]",
+//   KeyConditionExpression: "#ye =:yyyy and year between :start_yr and :end_yr",
 //   ExpressionAttributeNames: {
 //     "#yr": "year",
 //   },
 //   ExpressionAttributeValues: {
-//     ":start_yr": 2013,
+//     ":start_yr": 2011,
 //     ":end_yr": 2013,
 //   },
 // };

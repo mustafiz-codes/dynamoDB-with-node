@@ -16,7 +16,7 @@ var params = {
   },
   ExpressionAttributeValues: {
     ":start_yr": 2011,
-    ":end_yr": 2021s,
+    ":end_yr": 2021,
   },
 };
 
